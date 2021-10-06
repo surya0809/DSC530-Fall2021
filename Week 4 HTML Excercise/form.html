@@ -3,191 +3,168 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
-
     <title>HTML Form </title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-4">Sample Form</h1>
-            <hr class="my-4">
+    <h1>Sample Form</h1>
+
+    <form>
+
+
+        <div>
+            <label for="email">Email</label>
+            <div>
+                <input type="email" name="email" id="email">
+            </div>
         </div>
-        <form>
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailId"
-                            placeholder="Your email">
-                    </div>
-                </div>
+        <br>
+
+
+
+        <div>
+            <label for="fname">First Name</label>
+            <div>
+
+                <input type="text" name="fname" id="fname">
             </div>
+        </div>
+        <br>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="firstName">Firstname</label>
-                        <input type="text" class="form-control" name="firstName" id="firstName" aria-describedby="fname"
-                            placeholder="Your firstname">
-                    </div>
-                </div>
+
+        <div>
+            <label for="lname">Last Name</label>
+            <div>
+                <input type="text" name="lname" id="lname">
             </div>
+        </div>
+        <br>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="lastName">Lastname</label>
-                        <input type="text" class="form-control" name="lastName" id="lastName" aria-describedby="lname"
-                            placeholder="Your lastname">
-                    </div>
-                </div>
+
+        <div>
+            <label for="researchinterests">Research Interests</label>
+            <div>
+                <textarea name="researchinterests" id="researchinterests"></textarea>
             </div>
+        </div>
+        <br>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="rInterest">Research Interests</label>
-                        <textarea class="form-control" name="rInterest" id="rInterest" rows="3"></textarea>
-                    </div>
-                </div>
+
+        <div>
+            <label for="projecttitle">Project Title</label>
+            <div>
+                <textarea name="projecttitle" id="projecttitle"></textarea>
             </div>
+        </div>
+        <br>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="pTitle">Project Title</label>
-                        <textarea class="form-control" name="pTitle" id="pTitle" rows="3"></textarea>
-                    </div>
-                </div>
+
+        <p>Top Skills</p>
+        <div >
+            <label >
+                <input type="checkbox" name="sql" id="sql" value="sql">
+                SQL
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="python" id="python" value="python">
+                Python programming
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="matlab" id="matlab" value="matlab">
+                Matlab
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="djs" id="djs" value="djs">
+                D3js & Javascript
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="csharp" id="csharp" value="csharp">
+                C# VB .Net
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="php" id="php" value="php">
+                PHP
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="nodejs" id="nodejs" value="nodejs">
+                Node.JS
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="webdesigntools" id="webdesigntools" value="webdesigntools">
+                Web design tools (e.g. Wordpress)
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="htmlcss" id="htmlcss" value="htmlcss">
+                HTML&CSS
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="excel" id="excel" value="excel">
+                Excel
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="powerbi" id="powerbi" value="powerbi">
+                PowerBI
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="tableau" id="tableau" value="tableau">
+                Tableau
+            </label>
+        </div>
+        <div >
+            <label >
+                <input type="checkbox" name="option13" id="option13" value="option13">
+                Option 13
+            </label>
+        </div>
+        <div >
+            <label  for="other">
+                <input type="checkbox" name="other" id="other" value="other">
+                Other:
+                <input type="text" name="txt" id="txt" placeholder="">
+            </label>
+        </div>
+        <br>
+
+
+        <div>
+            <label for="qna">Suggestions and
+                questions</label>
+            <div>
+                <textarea name="qna" id="qna"></textarea>
             </div>
+        </div>
+        <br>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <p>Top Skills</p>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="sql" id="sql" value="sql">
-                            SQL
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="pProgmng" id="pProgmng"
-                                value="pProgmng">
-                            Python Programming
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="matlab" id="matlab" value="matlab">
-                            Matlab
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="d3andjs" id="d3andjs" value="d3andjs">
-                            D3js and Javascript
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="csharp" id="csharp" value="csharp">
-                            C# VB .Net
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="php" id="php" value="php">
-                            PHP
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="nodejs" id="nodejs" value="nodejs">
-                            Nodejs
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="Wordpress" id="Wordpress"
-                                value="wordpress">
-                            Wordpress
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="html" id="html" value="html">
-                            HTML and CSS
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="excel" id="excel" value="excel">
-                            Excel
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="powerbi" id="powerbi" value="powerbi">
-                            Power BI
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="tableau" id="tableau" value="tableau">
-                            Tableau
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="opt13" id="opt13" value="opt13">
-                            Option 13
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label" for="other">
-                            <input type="checkbox" class="form-check-input" name="other" id="other" value="other">
-                            Other:
-                            <input type="text" class="form-control" name="othertxt" id="othertxt"
-                                aria-describedby="othertxtId" placeholder="">
-                        </label>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="form-group">
-                        <label for="suggques">Suggestions or Questions</label>
-                        <textarea class="form-control" name="suggques" id="suggques" rows="3"></textarea>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <input name="submit" id="submit" type="button" value="Submit">
 
-            <div class="row mb-4 justify-content-center">
-                <div class="col-8">
-                    <div class="row mb-4 justify-content-between">
-                        <div class="col-2">
-                            <input name="submit" id="submit" class="btn btn-primary" type="button" value="Submit">
-                        </div>
-                        <div class="col-2">
-                            <button type="reset" class="btn btn-outline-primary">Reset</button>
-                        </div>
-                    </div>
-                </div>
+            <button type="reset">Reset</button>
+        </div>
 
-            </div>
-
-        </form>
-    </div>
+    </form>
 
 </body>
 
